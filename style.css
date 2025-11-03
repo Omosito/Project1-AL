@@ -20,6 +20,8 @@ li {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 h1 {
@@ -64,9 +66,7 @@ nav {
   padding-left: 50%;
 }
 
-nav div,
-a {
-  display: block;
+nav div {
   text-align: center;
   font-weight: bold;
   background-color: #a22f21;
@@ -75,6 +75,10 @@ a {
   margin-bottom: 3px;
   padding: 3px;
   border-radius: 5px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pets {
@@ -95,9 +99,14 @@ a {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
 }
 #adoption {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 #adoption img {
@@ -117,11 +126,28 @@ a {
   width: 75%;
   height: 40px;
   padding: 5px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  line-height: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+a:not(#adoption a) {
+  background-color: #a22f21;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px;
+  font-weight: bold;
+}
+
+#other_services li {
+  font-weight: bold;
+}
 #contact_img {
   border: none;
   border-radius: 0px;
